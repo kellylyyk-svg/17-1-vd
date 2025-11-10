@@ -6,15 +6,45 @@ li {list-style: none;}
 a {color: #333; text-decoration: none;}
 /* 필수 */
 
-.wrap {width: 990px; border: 1px solid #000; margin: 0 auto;}
+.wrap {width: 990px; margin: 0 auto;}
 
-.header {width: 785px; height: 93px; border: 1px solid #000; margin: 0 auto;}
-.header .logo {width: 160px; height: 65px; background: indianred; float: left;}
-.header .login_box {width: 300px; height: 45px; border: 1px solid #000; float: right;}
-.header .gnb {width: 785px; height: 28px; background: #444; float: left;}
+.header {width: 785px; height: 93px; margin: 0 auto;}
+
+    .header .logo {width: 160px; height: 65px; float: left;}
+
+    .header .login_box {width: 300px; height: 45px; float: right; font-size: 0; text-align: right; margin-top: 10px;}
+        .header .login_box li img {float: left; margin-top: 12px;}
+        .header .login_box li {display: inline-block; font-size: 12px; }
+        .header .login_box li a {padding: 5px 8px; display: block;}
+        .login_after {display: none;}
+
+    .header .gnb {width: 785px; height: 28px; background: #444; float: left; text-align: center; font-size: 0;}
+        .header .gnb li {display: inline-block; font-size: 13px; height: 28px; line-height: 28px;} 
+        .header .gnb li a {color: #fff;  padding: 0 30px; display: block;}
+        .header .gnb ul li:hover {background: #ccc;}
+        .header .gnb ul li:hover a {color: #333;}
 
 .visual {width: 990px; height: 392px; background: lightblue; margin-top: 9px;}
 
-.section {width: 785px; height: 230px; border: 1px solid #000; margin: 32px auto 55px auto;}
+
+
+.section {width: 785px; height: 230px; margin: 32px auto 55px auto;}
+
+ .banner_box {width: 510px; height: 166px; float: left;}
+ .banner_box li {width: 113px; height: 161px; background: #eee; float: left; margin-right: 15px;}
+ .banner_box li.big {width: 251px; height: 164px; background: #eee; float: right; margin-right: 0;}
+ .pop_box {width: 247px; height: 156px; float: right;}
+ .pop_box h2 {width: 247px; height: 28px; line-height: 28px; border-bottom: 1px solid #e6e6e6; font-size: 15px; color: #444; font-weight: bold; background-image: url(../images/bul02.jpg); background-repeat: no-repeat; background-position: 0 center; text-indent: 10px;}
+ .pop_box h2 span {color: #ff9555;}
+ .pop_box li {width: 247px; height: 28px; line-height: 28px; border-bottom: 1px solid #e6e6e6; font-size: 13px; font-weight: bold; text-indent: 22px;}
+ .pop_box li a {display: block; color: #777;}   
+ .notice_box {width: 785px; height: 32px; margin-top: 32px; float: left; background: #eee;}
+ .notice_box h2 {width: 107px; height: 32px; line-height: 32px; float: left; font-size: 14px; text-align: center; color: #444;}
+ .notice_box ul {width: 507px; line-height: 32px; float: left;}
+ .notice_box ul li {height: 32px; line-height: 32px; font-size: 14px;}
+ .notice_box ul li a {display: block; height: 100%; padding-left: 19px; color: #777;}
+ .notice_box a.btn_more {width: 107px; height: 32px; line-height: 32px; text-align: center; float: right; font-size: 12px; color: #777;}
 
 .footer {width: 990px; height: 90px; background: #3e3e3e}
+.footer h1 {float: left; margin-left: 107px; margin-top: 20px;}
+.footer .info {width: 530px; float: left; margin-left: 105px; margin-top: 20px; color: #999; text-align: right; font-size: 12px; word-break: keep-all;}
